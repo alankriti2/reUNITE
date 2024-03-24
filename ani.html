@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            filter: drop-shadow(0 0 50px #ff6f00);
+            animation: glow 2s infinte;
+        }
+        @keyframes glow{
+            0%{
+                filter: drop-shadow(0 0 10px #ff6f00);
+            }
+            100%{
+                filter: drop-shadow(0 0 25px #ff6f00);
+            }
+        }
+    </style>
+</head>
+<body>
+     <img src="./pumpkin.webp">
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid with Photo Explanations</title>
+  <style>
+    *{
+        background-color:rgb(255, 213, 128) ;
+    }
+.container-fluid{
+            background-color:rgb(255, 213, 128);
+            display: inline;
+            
+}
+.navbar-brand{
+            color:black;
+}
+.navbar ul{
+            overflow: auto;
+}
+.navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+}
+ a{
+            text-decoration: none;
+            color: black;
+}
+#subscribe-button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 70px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width:30%;
+  height: 50px;
+}
+
+ .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 60px;
+  padding-top: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.grid-item {
+  position: relative;
+  border-radius: 20px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: 270px;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+
+.grid-item p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+}
+
+.grid-item:hover p {
+  display: block;
+  opacity: 1;
+  border-radius: 30px;
+}
+
+  </style>
+</head>
+<body>
+    <header >
+        <nav class="navbar" style="padding-top: 0px;
+        padding-bottom: 0px;">
+            <div class="container-fluid">
+              
+              <ul style="padding-top: 0%;margin-top: 0%;margin-bottom: 0%;"> 
+                <li><a class="navbar-brand" href="#">
+                <img src="Logo2.jpg" alt="Logo" width="30" height="30" >
+                reUNITE
+              </a></li>
+                <li><a  href="./neww.html">Home</a></li>
+                <li><a  href="./aboutus.html">About</a></li>
+                <li><a  href="#">Services</a></li>
+                <li><a  href="#">Contact us</a></li>
+                <li><a  href="#">Testimonials</a></li>
+                <li  id="login"><a href="./LoginPage.html">login</a></li>
+              
+            </div>
+        </nav>
+    </header>
+
+        <section class="Testimonials">
+            <div style="font-size: 40px; text-align: center; padding-top: 20px; padding-bottom: 20px; text-decoration: solid;">Testimonials</div>
+            <div style="font-size: 20px; text-align: center; padding-bottom: 10px;">See how we help animals unite for a brighter, more compassionate world, one paw at a time.</div>\
+            <button id="subscribe-button">Subscribe Us to know more</button>
+
+        </section>
+
+
+     <div class="grid-container">
+         <div class="grid-item">
+            <img src="dog11.jpg" alt="Image 1" width="100%" height="100%">
+            <div class="p"  style="line-height: 2;">
+                <p>Max<br>
+                    Max, a mischievous Beagle, slipped his leash during a walk in the park, sending his owner, Emma, into a panic. Desperate, she enlisted the help of her community, posting about Max on our website. A young boy named Lucas recognized Max from the post and contacted Emma. Tearfully, they were reunited, and Lucas became a hero in their hearts, forever bound by Max's wagging tail and grateful eyes. </p>
+               </div>
+         </div>
+
+          <div class="grid-item">
+             <img src="dog12.png" alt="Image 2" width="100%" height="100%">
+             <div class="p" style="line-height: 2;">
+                <p>
+                    Snoopy<br>
+                    Snoopy, a german shephard wandered off, lost and scared. Emily, a kind-hearted girl, found him shivering in the park. She took him home, hoping to reunite him with his owner. After days of searching, Emily posted his picture on our website. Soon, a family recognized Snoopy, and tears of joy flowed as he was happily reunited with his grateful owners.</p>
+               </div>
+            </div>
+
+          <div class="grid-item" style="line-height: 2;">
+              <img src="dog14.jpg" alt="Image 3"  width="100%" height="100%">
+              <div class="p">
+                <p>Jimmy <br>
+                    Jimmy, a strret dog, dashed out an open gate, disappearing into the bustling streets. Sarah, a compassionate passerby, spotted him and took him in. Determined to find his owner, she posted flyers around the neighborhood. Days later, a worried family saw the poster online. They rushed to Sarah's house, overjoyed to have Jimmy back, their hearts filled with gratitude for the kind stranger who saved him.</p>
+               </div>
+          </div>
+
+          <div class="grid-item" style="line-height: 2;">
+               <img src="cat11.jpg" alt="Image 4"  width="100%" height="100%">
+               <div class="p">
+                <p>Leo <br>
+                    Leo was scared and alone. He didn't know what to do. He started to wander, hoping to find his way back to his family. He walked for hours, but he couldn't find his way home. A woman took him home. The woman entered Leo's information into the database and waited to see if anyone would claim him. Within a few hours, she received a call from Leo's owner. Leo's owner was so happy to hear that Leo had been found safe and sound.</p>
+               </div>
+          </div>
+
+          <div class="grid-item" style="line-height: 2;">
+               <img src="cat12.jpg" alt="Image 4"  width="100%" height="100%">
+               
+               <div class="p">
+                <p>Mittens<br>
+                    Mittens, a curious tabby cat, ventured too far from home and found herself lost in the unfamiliar neighborhood. Mia, a kind-hearted girl, discovered Mittens hiding in her backyard. Determined to find her owner, Mia put up flyers and shared Mittens' photo online. Soon, a worried family recognized their beloved feline. They rushed to Mia's house, overwhelmed with relief and gratitude for the caring stranger who brought Mittens back to them.
+                 </p>
+               </div>
+          </div>
+
+          <div class="grid-item" style="line-height: 2;">
+                <img src="dog15.jpeg" alt="Image 4"  width="100%" height="100%">
+                <div class="p">
+                    <p>
+                     Charlie<br>
+                     Charlie, a spirited Border Collie, slipped away from his owner, Jake, and ventured into the bustling streets. Panicked, Jake turned to the power of the internet, posting Charlie's picture on a lost pet website. Days later, a family recognized Charlie and contacted Jake. With tears of joy, they were reunited, and Jake was filled with gratitude for the online community that helped bring his furry friend back home.</p>
+                   </div>
+          </div>
+
+        </div>
+        
+    </body>
+</html>
